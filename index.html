@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Trivia de Cultura General</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div id="scoreDisplay">
+        <h3>Puntaje: </h3><span id="currentScore">0</span>
+    </div>
+
+    <div class="container">
+        <h1>Trivia de Cultura General</h1>
+        <div id="question-container">
+            <p id="question"></p>
+            <ul id="choices"></ul>
+        </div>
+        <p id="result"></p>
+        <p id="additional-info"></p>
+        <button id="next-button" onclick="nextQuestion()">Siguiente Pregunta</button>
+
+        <audio id="correctSound" src="audios/correcto.mp3"></audio>
+        <audio id="incorrectSound" src="audios/incorrecto.mp3"></audio>
+        <audio id="achievementSound" src="audios/victoria.mp3"></audio>
+        <audio id="defeatSound" src="audios/derrota.mp3"></audio>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
